@@ -1,0 +1,18 @@
+snippet cf "Template for Codeforces"
+	def solve():
+		${0:Code}
+	
+	T = int(input())
+	for i in range(T):
+		solve()
+
+snippet bins "Binary search template"
+	left = 0
+	right = ${0: length}
+	while (left < right):
+	    mid = (left + right) // 2;
+	    if (${1: condition}):
+	        right = mid;
+	    else:
+	        left = mid + 1
+

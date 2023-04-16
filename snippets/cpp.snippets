@@ -1,0 +1,25 @@
+snippet cf "Template for Codeforces"
+	#include <bits/stdc++.h>
+	using namespace std;
+	
+	void solve() {
+		${0:Code}
+	}
+	
+	int main() {
+		int T;
+		cin >> T;
+		for (int t = 0; t < T; t++) {
+			solve();
+		}
+	}
+
+snippet bins "Binary search template"
+	int left = 0, right = ${0: length};
+	while (left < right) {
+	    int mid = (left + right) / 2;
+	    if (${1: condition})
+	        right = mid;
+	    else
+	        left = mid + 1;
+	}
