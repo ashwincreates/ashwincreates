@@ -1,6 +1,6 @@
--- require('rose-pine').setup({
---     disable_background = true
--- })
+require('rose-pine').setup({
+    disable_background = true
+})
 
 require('kanagawa').setup({
     background = {
@@ -16,4 +16,4 @@ function ColorMyPencils(color)
     vim.api.nvim_set_hl(0, "TelescopeFloat", { bg = "none" })
 end
 
-ColorMyPencils('kanagawa')
+ColorMyPencils()
